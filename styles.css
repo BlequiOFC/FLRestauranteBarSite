@@ -1,16 +1,41 @@
 body {
     margin: 0%;
-    height: 100vh;
+    height: 200vh;
 }
 
-header {
+.header {
     background-color: #1d1d1d;
-    position: sticky;
-    height: 150px;
+    position: sticky !important; /* Manter header na tela */
+    top: 0px !important; /* Manter header na tela */
+    z-index: 100 !important; /* Manter header na tela */
+    height: 100px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+}
+
+header a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 90px;
 }
 
 header div {
+    justify-content: space-evenly;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+}
+
+
+.carrosselMain {
+    width: 100%;
+    max-height: calc(100vh - 100px);
+}
+
+.img-carrossel {
+    height: calc(100vh - 100px);
 }
