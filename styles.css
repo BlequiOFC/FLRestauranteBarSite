@@ -1,6 +1,7 @@
 body {
     margin: 0%;
     height: 200vh;
+    color: white;
 }
 
 .header {
@@ -14,12 +15,6 @@ body {
     flex-direction: row;
 }
 
-header a {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .logo {
     width: 90px;
 }
@@ -28,6 +23,10 @@ header div {
     justify-content: space-evenly;
     display: flex;
     flex-direction: row;
+}
+
+header div div {
+
 }
 
 
