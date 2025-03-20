@@ -20,15 +20,36 @@ body {
 }
 
 header div {
+    width: 100%;
     justify-content: space-evenly;
     display: flex;
     flex-direction: row;
+    height: 100%;
+    align-items: center;
 }
 
 header div div {
-
+    color: #f0c660 !important;
+    width: 250px;
+    justify-content: space-between;
 }
 
+header div div p {
+    margin: 0px;
+}
+
+.header-btns {
+    color: #f0c660 !important;
+}
+
+
+.fundo1 {
+    background-image: url("img/svg-fundo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 50vh;
+}
 
 .carrosselMain {
     width: 100%;
