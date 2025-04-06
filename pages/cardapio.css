@@ -115,6 +115,10 @@
   border-radius: 2%;
 }
 
+.bloco-comida p {
+  font-family: 'Inter';
+}
+
 
 
 .bloco-comida img{
