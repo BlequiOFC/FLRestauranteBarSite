@@ -28,10 +28,10 @@ header div {
     align-items: center;
 }
 
-header div div {
+.navbaritem {
     color: #f0c660 !important;
-    width: 250px;
-    justify-content: space-between;
+    /* width: 250px; */
+    /* justify-content: space-between; */
 }
 
 header div div p {
