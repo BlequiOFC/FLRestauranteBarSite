@@ -1,0 +1,46 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.rodape {
+  display: flex;
+  background-color: #CDA434;
+  color: #1A237E;
+
+
+  gap: 32vw;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1.5vw;
+
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rodape h1 {
+  font-size: 1.8vw;
+}
+
+.rodape p {
+  font-size: 1.2vw;
+  margin-top: 0.5vw
+}
+
+
+.rodape > img {
+  width: 9vw !important;
+}
+
+.rodape span {
+  margin-top: 1vw;
+    display: flex;
+    gap: 1.5vw;
+    justify-content: center;
+}
+.rodape img{
+  width: 3vw;
+  gap: 2vw;
+}
