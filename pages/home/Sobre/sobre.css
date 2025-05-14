@@ -61,6 +61,12 @@
   font-size: 2vw;
 }
 
+.esquerda-sobre button {
+  font-size: 25px !important;
+}
+
+
+
 @media (max-width: 500px) {
   .sobre-home {
     flex-direction: column;

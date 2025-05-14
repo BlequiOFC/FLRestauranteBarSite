@@ -8,7 +8,7 @@ body {
   margin: 0%;
   height: 100vh;
   color: white;
-  background-color: rgb(15, 15, 15) !important;
+  background-color: #2c2c2c !important;
 }
 
 h1 {
@@ -69,6 +69,10 @@ header div div p {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+
+
+  margin-top: 2.5vw;
+  margin-bottom: 2.5vw;
 }
 
 .cardConfira {
@@ -90,7 +94,7 @@ header div div p {
   color: #f0c660 !important;
   text-align: right !important;
   /* max-width: 40%; */
-  font-size: 30px;
+  font-size: 23px;
   margin-bottom: 100px;
   margin-left: auto;
 }
@@ -98,7 +102,7 @@ header div div p {
 .confiraText {
   margin-top: 30px;
   color: #f0c660 !important;
-  font-size: 55px;
+  font-size: 40px;
   text-align: right;
 }
 
@@ -107,37 +111,54 @@ header div div p {
   /* background-image: url("img/svg-fundo.png"); */
   /* background-repeat: no-repeat; */
   /* background-size: cover; */
-  background-color: antiquewhite !important;
+  background-color: #E8CFA0 !important;
   width: 100%;
   min-height: 50vh;
 
   max-width: 30%;
   text-align: center;
-  border-radius: 30px;
+  border-radius: 2%;
 }
 
 .PDDText {
   margin-top: 30px;
   color: #1d1d1d !important;
-  font-size: 55px;
+  font-size: 40px;
   text-align: center;
+}
+
+#DDSnocard {
+  font-size: 25px;
+}
+
+#nomedoprato {
+  font-size: 25px;
 }
 
 .cardapioBTN {
   background-color: #f0c56000 !important;
-  border: 3px solid #f0c660;
-  border-radius: 10px;
+  border: 1.5px solid #f0c660;
+  border-radius: 7px;
   cursor: pointer;
   /* margin-left: auto; */
   /* margin-top: 100px; */
-  text-align: right;
 }
 
+.cardapioBTN:hover   {
+  background-color: #E8CFA0  !important;
+  color: #2c2c2c !important;
+  transition: 0.5s;
+}
+
+
 .cardapioBTN_A {
-  font-size: 50px !important;
+  font-size: 2vw !important;
   color: #f0c660 !important;
+  padding: 0.5vw;
   text-decoration: none;
   text-align: right;
+
+
 }
 
 .itensCard1 {
@@ -146,7 +167,11 @@ header div div p {
   flex-direction: column;
   /* margin-right: 20px; */
   text-align: right;
+
+  padding: 1.5vw;
 }
+
+
 
 @media (min-width: 500px) {
   .itensCard1 {
@@ -183,6 +208,9 @@ header div div p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+
+
   }
 
   .cardConfira {
@@ -195,6 +223,7 @@ header div div p {
     display: flex;
     justify-content: center !important;
     flex-direction: column;
+
   }
 
   .cardConfira p {
@@ -234,10 +263,10 @@ header div div p {
   .cardapioBTN {
     background-color: #f0c56000 !important;
     color: #f0c660 !important;
-    border: 3px solid #f0c660;
+    border: 2px solid #f0c660;
     max-width: fit-content;
-    font-size: 50px !important;
-    border-radius: 10px;
+    font-size: 30px !important;
+    border-radius: 7%;
     /* padding: 10px; */
     text-align: center;
     text-decoration: none;
@@ -250,5 +279,6 @@ header div div p {
     align-items: center;
     flex-direction: column;
     /* margin-right: 20px; */
+
   }
 }
