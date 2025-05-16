@@ -1,35 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+
+
 .instagram {
   display: flex;
   flex-direction: column;
   width: 100%;
+
   
   align-items: center;
-  gap: 3vw;
+  gap: 1.5vw;
+
+  padding: 1.5vw;
 }
 
 
 .instagram h1 {
   font-weight: 700;
+  margin: 0;
+
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.8vw;
 }
 
-.caixa-fotos {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: center;
 
-
-  gap: 15px;
-}
-
+/*
 .caixa-fotos div  {
   overflow: hidden;
-  width: 30%;
+  display: flex;
+
+  width: 25vw;
+  padding: 0;
+  margin: 0;
 }
 
 
-.caixa-fotos img {
-  width: 100%;
+.caixa-fotos img:not(.coracao) {
+  width: 25vw;
+}
+
+.coracao {
+  width: 150px !important;
+  z-index: 1;
 }
 
 .instagram-foto {
@@ -41,6 +53,8 @@
 
 
 /* Degradê */
+
+/*
 .instagram-foto::after {
   content: "";
   position: absolute;
@@ -51,7 +65,7 @@
   pointer-events: none;
 }
 
-/* Aparece em hover (desktop) ou no toque (mobile, usando :active como fallback) */
+/* Aparece em hover (desktop) ou no toque (mobile, usando :active como fallback) */  /*
 .instagram-foto:hover::after,
 .instagram-foto:active::after {
   opacity: 1;
@@ -59,21 +73,68 @@
 
 .coracao {
   display: flex;
-  align-self: center;
-  position: absolute;
+  align-self: flex-end;
+  
 
-  height: 150px;
+  width: 150px;         
 }
-
+*/
 .seguir {
   display: flex;
   background-color: blue;
   padding: 1.5vw;
   border-radius: 1.2vw;
 
+
   color: #fff;
   text-decoration: none;
   font-family:Arial, Helvetica, sans-serif;
   font-weight: 700;
+  font-size: 1vw;
 }
 
+ /* --------------------------------------- */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vw
+}
+
+.container {
+  display: block;
+  width: 20vw;
+  height: 46vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0);
+  transition:  0.3s ease;
+}
+
+.icone {
+  width: 64px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.container:hover .overlay {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.container:hover .icone {
+  opacity: 1;
+  transform: translateY(0);
+}
