@@ -6,6 +6,7 @@
 
 .rodape {
   display: flex;
+  flex-direction: row;
   background-color: #CDA434;
   color: #1A237E;
 
@@ -15,8 +16,6 @@
   align-items: center;
 
   padding: 1.5vw;
-
-
   font-family: Arial, Helvetica, sans-serif;
 }
 
