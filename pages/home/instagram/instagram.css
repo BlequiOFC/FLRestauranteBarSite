@@ -58,7 +58,7 @@
 }
 
 .icone {
-  width: 64px;
+  width: 2.2vw;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.4s ease, transform 0.4s ease;
