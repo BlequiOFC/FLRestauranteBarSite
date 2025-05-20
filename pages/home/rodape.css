@@ -50,9 +50,54 @@
 .suporte-rodape img {
   width: 1.7vw;
 }
-/*
+
 .pagamentos-rodape div {
-  display: flex;
-  gap: 10px;
+    width: auto;
+    height: auto;
 }
 
+
+
+@media (max-width: 768px) {
+  .rodape {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5vw;
+  }
+
+  .rodape h1 {
+    font-size: 5vw;
+  }
+
+  .rodape a {
+    font-size: 4vw;
+  }
+
+  .suporte-rodape div {
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+  }
+
+  .suporte-rodape img {
+    width: 6vw;
+  }
+
+  .pagamentos-rodape div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vw;
+  }
+
+  .pagamentos-rodape img {
+    width: auto;
+    height: auto;
+  }
+
+  .rodape img {
+    max-width: 50vw;
+    height: auto;
+  }
+}

@@ -93,3 +93,40 @@
 
   text-decoration: none !important;
 }
+
+
+
+
+
+@media (max-width: 768px) {
+  .galeria-instagram {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-instagram {
+    width: 90vw;
+    aspect-ratio: 4 / 3;
+  }
+
+  /* Oculta todas as imagens, exceto a primeira */
+  .container-instagram:nth-child(n + 2) {
+    display: none;
+  }
+
+  .icone {
+    width: 8vw;
+  }
+
+  .instagram h5 {
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  .seguir {
+    font-size: 4vw;
+    padding: 3vw 5vw;
+    border-radius: 3vw;
+  }
+}
+

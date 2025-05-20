@@ -60,3 +60,42 @@
   padding: 0 !important;
 }
 
+
+
+
+@media (max-width: 768px) {
+  .sobre-home {
+    padding: 5vw;
+  }
+
+  .sobre-home h1 {
+    font-size: 6vw; /* aumenta os títulos para mobile */
+    text-align: center;
+  }
+
+  .sobre-home p {
+    font-size: 4vw;
+    line-height: 6vw;
+    text-align: justify;
+  }
+
+  .sobre-home div {
+    flex-direction: column; /* empilha imagem e texto */
+    align-items: center;
+  }
+
+  .sobre-home img {
+    width: 80%; /* imagem maior para mobile */
+    margin-bottom: 10px;
+  }
+
+  .sobre-home div p {
+    width: 100%; /* texto ocupa 100% */
+  }
+
+  .logo-canto {
+    width: 10vw !important; /* aumenta a logo no mobile */
+    margin-top: 20px;
+  }
+}
+
