@@ -81,6 +81,7 @@
   justify-content: space-evenly;
 
   color: #ffffff;
+
 }
 
 .pag-cardapio img {
@@ -111,6 +112,7 @@
   justify-content: space-evenly;
 }
 
+
 .bloco-comida {
   display: flex;
   flex-direction: column;
@@ -121,6 +123,8 @@
   border-radius: 2%;
 
   margin-top: 15px;
+  width: 250px;
+  height: 360px;
 }
 
 .bloco-comida p {
@@ -138,4 +142,35 @@
 .bloco-comida img{
   width: 197px;
   height: 200px;
+  align-self: center;
+}
+
+
+@media (max-width: 768px) {
+  .cabecalho-cardapio {
+    padding: 5vw;
+  }
+
+  .titulo-cardapio {
+    font-size: 8vw;
+    text-align: center;
+  }
+
+  .pag-cardapio {
+    flex-direction: column;
+    gap: 4vw;
+  }
+
+  .pag-cardapio a {
+    font-size: 4.5vw;
+  }
+
+  .pag-cardapio img {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  .linha {
+    display: none; 
+  }
 }
