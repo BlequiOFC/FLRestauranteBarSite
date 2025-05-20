@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  font-family: Lato, sans-serif;
+}
+
+body {
+  margin: 0%;
+  height: 100vh;
+  color: white;
+  background-color: #2c2c2c !important;
+}
+
+h1 {
+  font-family: "Lobster" !important;
+}
+
+.header {
+  /* background-color: #1d1d1d; */
+  position: sticky !important; /* Manter header na tela */
+  top: 0px !important; /* Manter header na tela */
+  z-index: 100 !important; /* Manter header na tela */
+  /* height: 100px; */
+  /* justify-content: space-evenly; */
+  /* display: flex; */
+  /* flex-direction: row; */
+}
+
+.logo {
+  width: 90px;
+}
+
+header div {
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+}
+
+.navbaritem {
+  color: #f0c660 !important;
+  /* width: 250px; */
+  /* justify-content: space-between; */
+}
+
+header div div p {
+  margin: 0px;
+}
+
+.header-btns {
+  color: #f0c660 !important;
+}
+
+.carrosselMain {
+  width: 100%;
+  max-height: calc(100vh - 100px);
+}
+
+.img-carrossel {
+  height: calc(100vh - 100px);
+}
+
+/* Card cardapio home */
+
+.divPaiCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+
+  margin-top: 2.5vw;
+  margin-bottom: 2.5vw;
+}
+
+.cardConfira {
+  margin: 10px;
+  background-image: url("img/svg-fundo3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70%;
+  min-height: 50vh;
+  border-radius: 30px;
+  display: flex !important;
+  justify-content: right !important;
+  align-items: right !important;
+  align-content: right !important;
+  flex-direction: column;
+}
+
+.cardConfira p {
+  color: #f0c660 !important;
+  text-align: right !important;
+  /* max-width: 40%; */
+  font-size: 23px;
+  margin-bottom: 100px;
+  margin-left: auto;
+}
+
+.confiraText {
+  margin-top: 30px;
+  color: #f0c660 !important;
+  font-size: 40px;
+  text-align: right;
+}
+
+#cardPratoDoDia {
+  margin: 10px;
+  /* background-image: url("img/svg-fundo.png"); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  background-color: #E8CFA0 !important;
+  width: 100%;
+  min-height: 50vh;
+
+  max-width: 30%;
+  text-align: center;
+  border-radius: 2%;
+}
+
+.PDDText {
+  margin-top: 30px;
+  color: #1d1d1d !important;
+  font-size: 40px;
+  text-align: center;
+}
+
+#DDSnocard {
+  font-size: 25px;
+}
+
+#nomedoprato {
+  font-size: 25px;
+}
+
+.cardapioBTN {
+  background-color: #f0c56000 !important;
+  border: 1.5px solid #f0c660;
+  border-radius: 7px;
+  cursor: pointer;
+  /* margin-left: auto; */
+  /* margin-top: 100px; */
+}
+
+.cardapioBTN:hover   {
+  background-color: #E8CFA0  !important;
+  color: #2c2c2c !important;
+  transition: 0.5s;
+}
+
+
+.cardapioBTN_A {
+  font-size: 2vw !important;
+  color: #f0c660 !important;
+  padding: 0.5vw;
+  text-decoration: none;
+  text-align: right;
+
+
+}
+
+.itensCard1 {
+  display: flex !important;
+  align-items: right !important;
+  flex-direction: column;
+  /* margin-right: 20px; */
+  text-align: right;
+
+  padding: 1.5vw;
+}
+
+
+
+@media (min-width: 500px) {
+  .itensCard1 {
+    margin-right: 20px;
+  }
+
+  .cardConfira p {
+    max-width: 400px;
+  }
+}
+
+#pratododia {
+    max-width: 70%;
+    max-height: 20%;
+    border-radius: 2%;
+    margin-bottom: 8px;
+}
+
+/** --------------------------------- */
+/** --------------------------------- */
+/** --------------------------------- */
+
+@media (max-width: 500px) {
+  .img-carrossel {
+    object-fit: cover;
+    /* width: 100%; */
+    /* height: auto; */
+  }
+
+  /* Card cardapio home */
+
+  .divPaiCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+
+  }
+
+  .cardConfira {
+    margin: 10px;
+    background-image: url("img/svg-fundo.png");
+    background-repeat: no-repeat;
+    min-width: 90%;
+    min-height: 50vh;
+
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+
+  }
+
+  .cardConfira p {
+    color: #f0c660 !important;
+    text-align: center !important;
+    font-size: 20px;
+    /* margin-right: 0px; */
+    margin-bottom: 80px;
+  }
+
+  .confiraText {
+    margin-top: 30px;
+    color: #f0c660 !important;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  #cardPratoDoDia {
+    margin: 10px;
+    /* background-image: url("img/svg-fundo.png"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    background-color: antiquewhite !important;
+    min-width: 90%;
+    min-height: 40vh;
+
+    /* max-width: 30%; */
+  }
+
+  .PDDText {
+    margin-top: 30px;
+    color: #1d1d1d !important;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .cardapioBTN {
+    background-color: #f0c56000 !important;
+    color: #f0c660 !important;
+    border: 2px solid #f0c660;
+    max-width: fit-content;
+    font-size: 30px !important;
+    border-radius: 7%;
+    /* padding: 10px; */
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    /* margin-top: 80px; */
+  }
+
+  .itensCard1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* margin-right: 20px; */
+
+  }
+}
