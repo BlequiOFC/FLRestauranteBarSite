@@ -109,7 +109,7 @@
     aspect-ratio: 4 / 3;
   }
 
-  /* Oculta todas as imagens, exceto a primeira */
+
   .container-instagram:nth-child(n + 2) {
     display: none;
   }

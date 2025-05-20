@@ -69,7 +69,7 @@
   }
 
   .sobre-home h1 {
-    font-size: 6vw; /* aumenta os títulos para mobile */
+    font-size: 6vw; /
     text-align: center;
   }
 
@@ -80,21 +80,21 @@
   }
 
   .sobre-home div {
-    flex-direction: column; /* empilha imagem e texto */
+    flex-direction: column; 
     align-items: center;
   }
 
   .sobre-home img {
-    width: 80%; /* imagem maior para mobile */
+    width: 80%; 
     margin-bottom: 10px;
   }
 
   .sobre-home div p {
-    width: 100%; /* texto ocupa 100% */
+    width: 100%; 
   }
 
   .logo-canto {
-    width: 10vw !important; /* aumenta a logo no mobile */
+    width: 10vw !important; 
     margin-top: 20px;
   }
 }
