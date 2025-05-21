@@ -41,6 +41,7 @@ header div {
   height: 100%;
   align-items: center;
   
+  
 }
 
 .navbaritem {
@@ -51,6 +52,10 @@ header div {
 
 header div div p {
   margin: 0px;
+}
+
+header a {
+  text-decoration: none;
 }
 
 .header-btns {
