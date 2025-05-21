@@ -21,7 +21,7 @@
   width: 100%;
   height: 100%;
 
-  background-image: url(../../img/madero.jpg);
+  background-image: url(../../../img/madero.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -81,6 +81,16 @@
   justify-content: space-evenly;
 
   color: #ffffff;
+}
+
+.pag-cardapio a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#destaque-sobremesa {
+  text-decoration: underline #cfa948 ;
+  text-decoration-thickness: 3px;
 }
 
 .pag-cardapio img {
@@ -174,5 +184,32 @@
 
   .linha {
     display: none; 
+  }
+}
+
+
+@media (max-width: 768px) {
+  .blocos {
+    justify-content: center;
+    gap: 5vw;
+  }
+
+  .bloco-comida {
+    width: 80vw;
+    height: auto;
+    padding: 5vw;
+  }
+
+  .bloco-comida img {
+    width: 100%;
+    height: auto;
+  }
+
+  .bloco-comida h3 {
+    font-size: 5vw;
+  }
+
+  .bloco-comida p {
+    font-size: 4vw;
   }
 }

@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 
 * {
   font-family: Lato, sans-serif;
@@ -281,5 +284,347 @@ header div div p {
     flex-direction: column;
     /* margin-right: 20px; */
 
+  }
+}
+
+
+
+
+
+
+/*-----------------PARTE SOBRE---------------*/
+
+
+.sobre-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  color: #CDA434;
+  background-color: #2c2c2c;
+
+
+  padding: 2.5vw;
+}
+
+.sobre-home h1 {
+  font-family: 'Lobster';
+  font-weight: 300;
+  font-size: 2.5vw;
+}
+
+.sobre-home img {
+  width: 40%;
+  border-radius: 3%;
+}
+
+.sobre-home div{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.sobre-home p {
+  padding: 15px;
+  font-size: 1.6vw;
+  font-family: 'Open Sans';
+  line-height: 2.2vw;
+}
+
+.sobre-home div p {
+  width: 80%; 
+}
+
+
+.parte-cima {
+  margin-top: 2.5vw;
+  display: flex;
+}
+
+
+.logo-canto {
+  width: 3vw !important;
+  align-self: flex-end !important;
+  padding: 0 !important;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .sobre-home {
+    padding: 5vw;
+  }
+
+  .sobre-home h1 {
+    font-size: 6vw; 
+    text-align: center;
+  }
+
+  .sobre-home p {
+    font-size: 4vw;
+    line-height: 6vw;
+    text-align: justify;
+  }
+
+  .sobre-home div {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .sobre-home img {
+    width: 80%; 
+    margin-bottom: 10px;
+  }
+
+  .sobre-home div p {
+    width: 100%; 
+  }
+
+  .logo-canto {
+    width: 10vw !important; 
+    margin-top: 20px;
+  }
+}
+
+
+
+
+/*------------------------ PARTE INSTAGRAM -----------------*/
+
+
+
+.instagram {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+
+  
+  align-items: center;
+  gap: 1.5vw;
+
+  padding: 2vw;
+}
+
+
+.instagram h5 {
+  font-weight: 700;
+  margin: 0;
+
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.8vw;
+}
+
+
+
+ /* --------------------------------------- */
+.galeria-instagram {
+  display: flex;
+  flex-direction: row;
+
+  gap: 1vw
+}
+
+.container-instagram {
+  display: block;
+  width: 20vw;
+  height: 46vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.overlay-instagram {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0);
+  transition:  0.3s ease;
+}
+
+.icone {
+  width: 2.2vw;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.container-instagram:hover .overlay-instagram {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.container-instagram:hover .icone {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+.seguir {
+  display: flex;
+  background-color: blue;
+  padding: 1vw;
+  border-radius: 1.2vw;
+
+
+  color: #fff;
+  text-decoration: none;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1vw;
+
+  text-decoration: none !important;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .galeria-instagram {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-instagram {
+    width: 90vw;
+    aspect-ratio: 4 / 3;
+  }
+
+
+  .container-instagram:nth-child(n + 2) {
+    display: none;
+  }
+
+  .icone {
+    width: 8vw;
+  }
+
+  .instagram h5 {
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  .seguir {
+    font-size: 4vw;
+    padding: 3vw 5vw;
+    border-radius: 3vw;
+  }
+}
+
+
+
+/* -------------------- PARTE RODAPEEE ---------------*/
+
+
+
+.rodape {
+  display: flex;
+  flex-direction: row;
+  background-color: #CDA434;
+  color: #1A237E;
+
+  padding: 1.5vw;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.rodape:not(img) {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rodape h1 {
+  font-size: 1.5vw;
+}
+
+.rodape a {
+  text-decoration: none !important;
+  font-size: 1.2vw;
+  
+  color: #1A237E;
+}
+
+
+.endereco-rodape {
+  display: flex;
+  flex-direction: column;
+}
+
+.suporte-rodape {
+  display: flex;
+  flex-direction: column;
+}
+
+.suporte-rodape div {
+  display: flex;
+  gap: 0.4vw;
+  margin-top: 5px;
+}
+
+.suporte-rodape img {
+  width: 1.7vw;
+}
+
+.pagamentos-rodape div {
+    width: auto;
+    height: auto;
+    margin-top: 5px;
+}
+
+
+
+@media (max-width: 768px) {
+  .rodape {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5vw;
+  }
+
+  .rodape h1 {
+    font-size: 5vw;
+  }
+
+  .rodape a {
+    font-size: 4vw;
+  }
+
+  .suporte-rodape div {
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+  }
+
+  .suporte-rodape img {
+    width: 6vw;
+  }
+
+  .pagamentos-rodape div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vw;
+  }
+
+  .pagamentos-rodape img {
+    width: auto;
+    height: auto;
+  }
+
+  .rodape img {
+    margin-top: 8px;
+    max-width: 50vw;
+    height: auto;
   }
 }
