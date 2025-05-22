@@ -1,5 +1,5 @@
 const data = new Date();
-const diaDaSemana = data.getDay();
+var diaDaSemana = data.getDay();
 
 console.log(diaDaSemana);
 
@@ -13,37 +13,59 @@ console.log(diaDaSemana);
 
 const DDSnocard = document.getElementById("DDSnocard");
 const nomedoprato = document.getElementById("nomedoprato");
+const pratododiafoto = document.getElementById("pratododiafoto");
+function pratododia() {
+  switch (diaDaSemana) {
+    case 0:
+      DDSnocard.innerHTML = "Domingo";
+      nomedoprato.innerHTML = "Estamos fechados";
+      pratododiafoto.src = "../img/fechado.png";
+      break;
+    case 1:
+      DDSnocard.innerHTML = "Segunda-Feira";
+      nomedoprato.innerHTML = "Virado à Paulista";
+      pratododiafoto.src = "../img/comidas/27.jpeg";
+      break;
+    case 2:
+      DDSnocard.innerHTML = "Terça-Feira";
+      nomedoprato.innerHTML = "Bife a rolê";
+      pratododiafoto.src = "../img/comidas/bifearole.jpg";
+      break;
+    case 3:
+      DDSnocard.innerHTML = "Quarta-Feira";
+      nomedoprato.innerHTML = "Feijoada";
+      pratododiafoto.src = "../img/comidas/24.jpeg";
+      break;
+    case 4:
+      DDSnocard.innerHTML = "Quinta-Feira";
+      nomedoprato.innerHTML = "Macarrão com frango assado";
+      pratododiafoto.src = "../img/comidas/macarrao.png";
+      break;
+    case 5:
+      DDSnocard.innerHTML = "Sexta-Feira";
+      nomedoprato.innerHTML = "Estrogonoff de carne/frango";
+      pratododiafoto.src = "../img/comidas/estrogonofe.jpg";
+      break;
+    case 6:
+      DDSnocard.innerHTML = "Sábado";
+      nomedoprato.innerHTML = "Feijoada";
+      pratododiafoto.src = "../img/comidas/24.jpeg";
+      break;
+  }
 
-switch (diaDaSemana) {
-  case 0:
-    DDSnocard.innerHTML = "Domingo";
-    nomedoprato.innerHTML = "Estamos fechados";
-    break;
-  case 1:
-    DDSnocard.innerHTML = "Segunda-Feira";
-    nomedoprato.innerHTML = "Frango com Quiabo";
-    break;
-  case 2:
-    DDSnocard.innerHTML = "Terça-Feira";
-    nomedoprato.innerHTML = "Bife Acebolado";
-    break;
-  case 3:
-    DDSnocard.innerHTML = "Quarta-Feira";
-    nomedoprato.innerHTML = "Peixe com Batata";
-    break;
-  case 4:
-    DDSnocard.innerHTML = "Quinta-Feira";
-    nomedoprato.innerHTML = "Carne Moída com Batata";
-    break;
-  case 5:
-    DDSnocard.innerHTML = "Sexta-Feira";
-    nomedoprato.innerHTML = "Frango com Batata";
-    break;
-  case 6:
-    DDSnocard.innerHTML = "Sábado";
-    nomedoprato.innerHTML = "Macarrão com Carne";
-    break;
+// diaDaSemana = 0;
+
+//    diaDaSemana++;
+//    if (diaDaSemana > 6) {
+//      diaDaSemana = 0;
+//    }
 }
+
+// setInterval(function() {
+//     pratododia();
+// }, 2000);
+
+pratododia();
 
 function attCarrossel() {
   const width = window.innerWidth;

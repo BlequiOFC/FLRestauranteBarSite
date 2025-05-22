@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap');
 
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 
 
@@ -128,7 +131,7 @@
   flex-direction: column;
   padding: 20px;
 
-  gap: 10px;
+  /* gap: 10px; */
   background-color: #fff;
   border-radius: 2%;
 
@@ -140,11 +143,16 @@
 .bloco-comida p {
   font-family: 'Inter';
   color: black;
+  margin-bottom: 5px !important;
 }
 
 .bloco-comida h3 {
-  font-family: 'Inter';
-  color: black;
+  font-family: 'Inter' !important; 
+  color: black !important;
+  font-size: 1.17em !important;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 0px !important;
 }
 
 
@@ -153,4 +161,22 @@
   width: 197px;
   height: 200px;
   align-self: center;
+}
+
+
+@media(max-width:500px) {
+  .pag-cardapio {
+    flex-direction: column;
+  }
+
+  .linha {
+    width: 0px;
+    height: 10px;
+  }
+
+  .pag-cardapio a {
+    font-size: larger;
+    font-family: 'Lato';
+    font-weight: 400;
+  }
 }
