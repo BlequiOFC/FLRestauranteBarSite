@@ -61,5 +61,5 @@ function attCarrossel() {
     img_carrossel3.src = "../img/carrossel/carrosselimg3pc.png";
   }
 }
-
+attCarrossel();
 window.addEventListener("resize", attCarrossel);
