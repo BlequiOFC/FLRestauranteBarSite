@@ -1,7 +1,7 @@
 # FLRestauranteBarSite
-ATV1 da matéria Projeto em empreendedorismo.
-Ánalise e desenvolvimento de sistemas.
-Universidade nove de julho.
+ATV1 da matéria Projeto em empreendedorismo. <br>
+Ánalise e desenvolvimento de sistemas. <br>
+Universidade nove de julho. <br>
 
 Integrantes do grupo:
 - Danilo Gomes Laurentino de Souza
@@ -10,5 +10,5 @@ Integrantes do grupo:
 - Levi Fernandes Lima
 - Wendel Portela Silva
 
-Vídeo apresentação do projeto:
+Vídeo apresentação do projeto: <br>
 https://youtu.be/GhMJiwLYKoU
